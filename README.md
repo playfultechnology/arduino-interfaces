@@ -16,3 +16,9 @@ This makes them ideal for receiving an input from a 3.3V MCU such as a Raspberry
 - The 74HCT125 is unidirectional - input on A pin always activates output on corresponding Y pin. The 74HCT245 allows transmission either from A to B, or from B to A (selectable via DIR pin))
 - Tie unused inputs to `GND`
 - As per <a href="https://www.ti.com/lit/ds/symlink/sn74hct245.pdf">10. Power Supply Recommendations</a>, place a 0.1μF and a 1μF capacitors in parallel across `VCC` and `GND` as close to the power pin as possible.
+
+
+## Feeding a 5V Input to a 3.3V device
+
+Use a 74LVC1G125 logic level shifter
+https://www.diodes.com/assets/Datasheets/74LVC1G125.pdf
